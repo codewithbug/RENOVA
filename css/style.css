@@ -1,0 +1,444 @@
+/* Main Style file for RENOVA */
+
+/* General styling */
+*{
+    font-family: 'Montserrat', sans-serif;;
+}
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.goTop{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+.goTop img{
+    width: 15px;
+}
+
+.goDown{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+    z-index: 2;
+    color: #fff;
+    margin-bottom: 0;
+    transform: rotate(90deg);
+}
+.goDown:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.goDown hr{
+    width: 40px;
+    background-color: #fff;
+    margin: 0px 10px;
+}
+.goDown p{
+    padding: 5px;
+    margin-bottom: 0;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Page Header styling */
+header{
+    padding: 10px 100px;
+}
+.navbar-brand{
+    margin-right: 75px;
+}
+.navbar-brand img{
+    width: 130px;
+}
+.navbar-collapse{
+    justify-content: space-between;
+}
+.nav-link{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000!important;
+    padding: 5px 15px!important;
+    transition: all 0.2s;
+}
+.nav-link:hover{
+    color: rgba(0,0,0,0.7)!important;
+}
+.followUs{
+    display: flex;
+    align-items: center;
+}
+.followUs p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    color: #000;
+}
+.followUs hr{
+    width: 40px;
+    background-color: #000;
+    margin: 0px 10px;
+}
+.followUs a{
+    margin: 0px 5px;
+}
+.followUs a i{
+    color: #000;
+    transition: all 0.2s;
+}
+.followUs a i:hover{
+    color: rgba(0,0,0,0.7)
+}
+
+
+/* Hero Section styling */
+#hero{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.heroImg{
+    height: 95%;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    right: 100px;
+    z-index: 2;
+    background: url(../img/hero.svg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+.heroText{
+    width: 45%;
+}
+.heroText h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.heroText h1 strong{
+    font-weight: 600;
+}
+.heroText p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #717171;
+    margin-bottom: 0;
+}
+.heroGreen{
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 100px;
+    z-index: 1;
+    background: #44B359;
+}
+
+
+/* Services Section styling */
+#services{
+    margin-bottom: 50px;
+}
+.servicesTop{
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.servicesTop hr{
+    width: 30px;
+    height: 2px;
+    background-color: #44B359;
+    margin-right: 15px;
+    margin-left: 0;
+}
+.servicesTop h1{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.servicesBody{
+    background-color: #44B359;
+    padding: 75px 100px;
+}
+.servicesRow{
+    margin: 0;
+}
+.servicesCard{
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.servicesCard:hover{
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.75);
+}
+.servicesCard h2{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.servicesCard hr{
+    width: 60px;
+    height: 2px;
+    background: #717171;
+    border-radius: 5px;
+    margin: 10px 0px;
+    opacity: 0.5;
+}
+.servicesCard img{
+    width: 120px;
+    margin: 20px 0px;
+}
+.servicesCard p{
+    height: 105px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0px 25px;
+}
+.servicesCard button{
+    width: 125px;
+    border: none;
+    border-radius: 20px;
+    background-color: #44B359;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 0;
+    margin: 15px 0px;
+    outline: none;
+    transition: all 0.2s;
+}
+.servicesCard button:hover{
+    background-color: #0b8321;
+}
+
+
+/* "How We Work" Section styling */
+#system{
+    margin-bottom: 50px;
+}
+.systemTop{
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.systemTop hr{
+    width: 30px;
+    height: 2px;
+    background-color: #44B359;
+    margin-right: 15px;
+    margin-left: 0;
+}
+.systemTop h1{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.systemBody{
+    background-color: #fff;
+    padding: 25px 100px;
+}
+.stepRow{
+    margin: 0;
+}
+.stepCardContainer{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.stepCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.stepCard h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.stepCard hr{
+    width: 85px;
+    height: 2px;
+    background: #44B359;
+    border-radius: 5px;
+    margin: 10px 0px;
+    opacity: 0.5;
+}
+.stepCard h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.stepCard p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #202126;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0px 25px;
+}
+
+
+/* Advantages Section */
+#advantages{
+    margin-bottom: 50px;
+}
+.advantagesTop{
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.advantagesTop hr{
+    width: 30px;
+    height: 2px;
+    background-color: #44B359;
+    margin-right: 15px;
+    margin-left: 0;
+}
+.advantagesTop h1{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.advantagesBody{
+    background-color: #fff;
+    padding: 0px 100px;
+}
+.advantagesRow{
+    margin: 0;
+}
+.advantagesCard img{
+    width: 275px;
+}
+.advantagesCard h3{
+    font-size: 26px;
+    font-weight: 500;
+    color: #202126;
+    text-align: center;
+}
+
+
+/* Contact Section */
+#contact{
+
+}
+.contactRow{
+    height: 100%;
+    margin: 0;
+}
+.contactCol{
+    padding: 0;
+}
+.contactImg{
+    width: 100%;
+    height: 100%;
+    background: url(../img/contactBg.svg) center center no-repeat;
+    background-size: cover;
+}
+.contactFormContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    padding: 50px 0px;
+}
+.contactFormContainer form{
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.contactFormContainer form h4{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.contactFormContainer form input{
+    background-color: #fafafa;
+    border: 2px solid #d3d3d3;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.85);
+    margin-bottom: 15px;
+    padding: 8px 25px;
+    outline: none;
+}
+.contactFormContainer form textarea{
+    min-height: 120px;
+    background-color: #fafafa;
+    border: 2px solid #d3d3d3;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.85);
+    margin-bottom: 15px;
+    padding: 8px 25px;
+    outline: none;
+}
+.contactButton{
+    display: flex;
+    justify-content: flex-end;
+}
+.contactButton button{
+    border: none;
+    background-color: transparent;
+    font-size: 16;
+    font-weight: 600;
+    padding: 5px;
+    outline: none;
+}
+
+
+/* Page Footer styling */
+footer{
+    position: relative;
+}
+.footerWhite{
+    padding: 20px 50px;
+}
+footer .followUs{
+    justify-content: flex-end;
+}
+.footerBlack{
+    padding: 20px 50px;
+    background-color: #202126;
+    color: #fff;
+}
+.footerBlack p{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0;
+}
+
